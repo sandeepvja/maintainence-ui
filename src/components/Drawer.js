@@ -10,6 +10,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
+import PaymentIcon from '@material-ui/icons/Payment';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -32,8 +33,10 @@ const useStyles = makeStyles((theme) => ({
 export default function PermanentDrawerLeft(props) {
   const classes = useStyles();
 
-  const menuItems = ['Owner Details', 'Maintainence Account', 'Expenses', 'Minutes of the Meeting']
-  const icons = [<InfoIcon/>, <AccountBalanceIcon/>, <ReceiptIcon/>, <MeetingRoomIcon/>]
+  //const menuItems = ['Owner Details', 'Maintainence Account', 'Expenses', 'Minutes of the Meeting']
+  //const icons = [<InfoIcon/>, <AccountBalanceIcon/>, <ReceiptIcon/>, <MeetingRoomIcon/>]
+  const menuItems = ['Owner Details', 'Maintainence Account', 'Add Payment/Expense']
+  const icons = [<InfoIcon/>, <AccountBalanceIcon/>, <PaymentIcon/>]
 
   const listItems = menuItems.map((menu, index) => (
     <ListItem button key={index} onClick={() => props.onMenuItemClick(index)}>

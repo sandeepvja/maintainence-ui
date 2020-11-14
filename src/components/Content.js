@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import MaintainenceAccountPage from './maintainence_page/MaintainenceAccountPage';
-import OwnerDetailsPage from './ownerdetails_page/owners';
+import OwnerDetailsPage from './ownerdetails_page/OwnershipDetailsPage';
+import AddPaymentsPage from './add_payments_page/AddPaymentsPage';
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -19,16 +20,18 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 function getMainContentPage(selected) {
-  
+
   switch(selected) {
     case 0:
       return <OwnerDetailsPage />
 
     case 1:
       return <MaintainenceAccountPage />
+    case 2:
+      return <AddPaymentsPage />
 
     default:
-      return <MaintainenceAccountPage />
+      return <OwnerDetailsPage />
   }
 }
 export default function MainContent(props){
