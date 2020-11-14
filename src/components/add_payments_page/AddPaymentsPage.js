@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import PaymentsForm from './payments_form';
+import ExpenseForm from './expenses_form';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
@@ -40,6 +41,7 @@ export default function AddPaymentForm(props) {
       </TextField>
       <br />
       <PaymentsForm />
+      <ExpenseForm />
       <Button variant="contained" color="primary">
         Submit
       </Button>
