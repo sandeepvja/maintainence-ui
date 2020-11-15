@@ -8,8 +8,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InfoIcon from '@material-ui/icons/Info';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-import ReceiptIcon from '@material-ui/icons/Receipt';
-import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 import PaymentIcon from '@material-ui/icons/Payment';
 
 const drawerWidth = 240;

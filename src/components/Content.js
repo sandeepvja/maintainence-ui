@@ -19,16 +19,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '20px',
   }
 }))
-function getMainContentPage(selected) {
+function getMainContentPage(props) {
 
-  switch(selected) {
+  switch(props.selected) {
     case 0:
       return <OwnerDetailsPage />
 
     case 1:
       return <MaintainenceAccountPage />
     case 2:
-      return <AddPaymentsPage />
+      return <AddPaymentsPage/>
 
     default:
       return <OwnerDetailsPage />
@@ -36,7 +36,7 @@ function getMainContentPage(selected) {
 }
 export default function MainContent(props){
   const classes = useStyles();
-  const page = getMainContentPage(props.selected)
+  const page = getMainContentPage(props)
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
