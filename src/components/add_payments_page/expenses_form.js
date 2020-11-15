@@ -38,7 +38,7 @@ export default function ExpenseForm(props) {
           ))}
       </TextField>
       <br />
-      <TextField required id="desc" label="Description" size="1000"
+      <TextField required id="desc" label="Description"
        value={props.type} >
       </TextField>
       <br />

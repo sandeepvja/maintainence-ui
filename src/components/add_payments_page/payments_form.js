@@ -69,7 +69,7 @@ export default function PaymentsForm(props) {
           ))}
       </TextField>
       <br />
-      <TextField required id="month" select label="Month" size="1000"
+      <TextField required id="month" select label="Month" 
        value={props.type} >
           {month.map((option) => (
             <MenuItem key={option.value} value={option.value}>

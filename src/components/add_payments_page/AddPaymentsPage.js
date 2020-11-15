@@ -24,24 +24,14 @@ const entryTypes = [
   }
 ]
 
-function handleChange(type) {
-
+function handleChange(e) {
+  console.log("Selected: "+ e)
 }
 export default function AddPaymentForm(props) {
   const classes = useStyles();
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <TextField required id="type" select label="Payment / Expense"
-       value={props.type} helperText="Please select your Data entry type">
-          {entryTypes.map((option) => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
-      </TextField>
-      <br />
       <PaymentsForm />
-      <ExpenseForm />
       <Button variant="contained" color="primary">
         Submit
       </Button>
